@@ -118,7 +118,7 @@ public class Main {
             } else if (userDatabase.containsKey(username)) {
                 messageLabel.setText("Username already exists.");
             } else if (isWeakPassword(password)) {
-                messageLabel.setText("Password is too weak.");
+                messageLabel.setText("Password is too weak. Password must be at least 8 characters with at least: 1 Uppercase, 1 lowercase, 1 number, 1 special character.");
             } else {
                 // Hash the password and store it
                 String hashedPassword = hashPassword(password);
